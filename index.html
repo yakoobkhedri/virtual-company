@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <title>صفحه اصلی</title>
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h1 class="modal-title fs-5 font-bold text-white" id="exampleModalLabel">گزارش کار</h1>
+          <svg data-bs-dismiss="modal" aria-label="Close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            fill="currentColor" class="bi bi-x-square-fill cursor text-danger me-auto ms-0" viewBox="0 0 16 16">
+            <path
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708" />
+          </svg>
+        </div>
+        <div class="modal-body border-0">
+          <input placeholder="گزارش کار" class="form-control bg-transparent border-warning text-white">
+        </div>
+        <div class="modal-footer border-0">
+          <button data-bs-dismiss="modal" type="button" class="btn btn-warning w-100 text-white font-bold mx-auto">ارسال
+            گزارش</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h1 class="modal-title fs-5 font-bold text-white" id="exampleModalLabel">گزارش خطا</h1>
+          <svg data-bs-dismiss="modal" aria-label="Close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            fill="currentColor" class="bi bi-x-square-fill cursor text-danger me-auto ms-0" viewBox="0 0 16 16">
+            <path
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708" />
+          </svg>
+        </div>
+        <div class="modal-body border-0">
+          <input placeholder="گزارش خطا" class="form-control bg-transparent border-warning text-white">
+        </div>
+        <div class="modal-footer border-0">
+          <button data-bs-dismiss="modal" type="button" class="btn btn-warning w-100 text-white font-bold mx-auto">ارسال
+            گزارش</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h1 class="modal-title fs-5 font-bold text-white" id="exampleModalLabel">افزودن وظایف</h1>
+          <svg data-bs-dismiss="modal" aria-label="Close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            fill="currentColor" class="bi bi-x-square-fill cursor text-danger me-auto ms-0" viewBox="0 0 16 16">
+            <path
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708" />
+          </svg>
+        </div>
+        <div class="modal-body border-0">
+          <textarea class="form-control bg-transparent border-warning text-white" placeholder="توضیحات"></textarea>
+        </div>
+        <div class="modal-footer border-0 gap-3 d-flex align-items-center justify-content-center">
+          <div class="position-relative btn btn-success">
+            <p class="mb-0 font-bold">انتخاب عکس</p>
+            <input type="file" class="position-absolute cursor top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0 z-10">
+          </div>
+          <button data-bs-dismiss="modal" type="button" class="btn btn-warning text-white font-bold">ارسال</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+       <!-- Modal -->
+       <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <h1 class="modal-title fs-5 font-bold text-white" id="exampleModalLabel">واریز پول</h1>
+              <svg data-bs-dismiss="modal" aria-label="Close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor" class="bi bi-x-square-fill cursor text-danger me-auto ms-0" viewBox="0 0 16 16">
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708" />
+              </svg>
+            </div>
+            <div class="modal-body border-0">
+              <div class="d-flex align-items-center gap-3">
+               <label class="font-bold text-white">مبلغ</label>
+               <input class="form-control border-warning bg-transparent text-white" placeholder="مبلغ را وارد کنید">
+              </div>
+              <div class="d-flex align-items-center justify-content-center flex-wrap gap-3 mt-4">
+                <p class="font-bold text-warning mb-0">موجودی قابل انتقال:</p>
+                <p class="text-warning mb-0">30,000,000 تومان</p>
+              </div>
+            </div>
+            <div class="modal-footer border-0 gap-3 d-flex align-items-center justify-content-center">
+              <button data-bs-dismiss="modal" type="button" class="btn btn-warning w-100 text-white font-bold">واریز</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h1 class="modal-title fs-5 font-bold text-white" id="exampleModalLabel">افزودن هدف</h1>
+            <svg data-bs-dismiss="modal" aria-label="Close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="currentColor" class="bi bi-x-square-fill cursor text-danger me-auto ms-0" viewBox="0 0 16 16">
+              <path
+                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708" />
+            </svg>
+          </div>
+          <div class="modal-body border-0">
+            <textarea class="form-control bg-transparent border-warning text-white" placeholder="توضیحات"></textarea>
+          </div>
+          <div class="modal-footer border-0 gap-3 d-flex align-items-center justify-content-center">
+            <div class="position-relative btn btn-success">
+              <p class="mb-0 font-bold">انتخاب عکس</p>
+              <input type="file" class="position-absolute cursor top-0 bottom-0 end-0 start-0 w-100 h-100 opacity-0 z-10">
+            </div>
+            <button data-bs-dismiss="modal" type="button" class="btn btn-warning text-white font-bold">ارسال</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h1 class="modal-title fs-5 font-bold text-white" id="exampleModalLabel">اخراج از شرکت</h1>
+                <svg data-bs-dismiss="modal" aria-label="Close" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  fill="currentColor" class="bi bi-x-square-fill cursor text-danger me-auto ms-0" viewBox="0 0 16 16">
+                  <path
+                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708" />
+                </svg>
+              </div>
+              <div class="modal-body border-0 text-white">
+                <h6 class="font-bold text-warning">دلیل اخراج</h6>
+                <p class="mb-0 mt-3">این شخص به علت عدم رعایت قوانین شرکت و توهین و افتراء به مدیرعامل از شرکت اخراج شده است.</p>
+              </div>
+              <div class="modal-footer border-0 gap-3 d-flex align-items-center justify-content-center">
+                <button data-bs-dismiss="modal" type="button" class="btn btn-warning text-white font-bold w-100">تایید</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- main -->
+
+  <main class="d-flex gap-4">
+
+    <!-- sidebar -->
+    <aside
+      class="w-260 w-lg-100 bottom-lg-0 fs-sm-13 d-flex d-lg-block gap-4 justify-content-between h-lg-80 p-sm-4 p-3 font-bold shadow bg-primary position-fixed h-100vh overflow-y-lg-visible overflow-y-auto z-10">
+      <a class="d-flex align-items-center gap-2 text-warning py-3 border-bottom border-warning border-sm-0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi flex-shrink-0 d-none d-sm-block bi-speedometer2" viewBox="0 0 16 16">
+          <path
+            d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z" />
+          <path fill-rule="evenodd"
+            d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3" />
+        </svg>
+        <p class="mb-0">داشبورد</p>
+      </a>
+      <a class="d-flex align-items-center gap-2 text-warning py-3 border-bottom border-warning border-sm-0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi flex-shrink-0 d-none d-sm-block bi-clipboard-data" viewBox="0 0 16 16">
+          <path
+            d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0z" />
+          <path
+            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
+          <path
+            d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
+        </svg>
+        <p class="mb-0">اطلاعات من</p>
+      </a>
+      <a class="d-flex align-items-center gap-2 text-warning py-3 border-bottom border-warning border-sm-0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi flex-shrink-0 d-none d-sm-block bi-search" viewBox="0 0 16 16">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+        </svg>
+        <p class="mb-0">جستجو</p>
+      </a>
+      <a class="d-flex align-items-center gap-2 text-warning py-3 border-bottom border-warning border-sm-0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi flex-shrink-0 d-none d-sm-block bi-chat-dots" viewBox="0 0 16 16">
+          <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+          <path
+            d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2" />
+        </svg>
+        <p class="mb-0">پیام ها</p>
+      </a>
+    </aside>
+
+    <!-- content -->
+    <section class="pb-5 flex-grow-1 mr-280 mr-lg-0">
+      <div class="container mt-5 mb-5 mb-lg-0">
+        <div class="d-flex align-items-center gap-4">
+          <div class="nav-item dropdown">
+            <a class="nav-link text-warning font-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              خوش آمدی فردین
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">خروج از حساب کاربری</a></li>
+            </ul>
+          </div>
+          <div class="position-relative d-block dropdownHover">
+            <span
+              class="bg-danger cursor text-white font-bold position-absolute font-bold start-0 rounded-circle d-flex align-items-center justify-content-center m-3 fs-14 w-16 h-16">2</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+              class="bi bi-chat-dots text-warning cursor" viewBox="0 0 16 16">
+              <path
+                d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+              <path
+                d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2" />
+            </svg>
+            <div class="position-absolute top-26 dropdownContent z-10">
+              <div class="bg-white w-223 rounded-3 p-2 mt-3 px-4">
+                <a class="d-flex align-items-center gap-2 text-dark fs-12 font-bold py-2 border-bottom">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-megaphone text-danger flex-shrink-0" viewBox="0 0 16 16">
+                    <path
+                      d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z" />
+                  </svg>
+                  <p class="mb-0">یک پیام جدید از طرف رضا دارید</p>
+                </a>
+                <a class="d-flex align-items-center gap-2 text-dark fs-12 font-bold py-2 border-bottom">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-megaphone text-danger flex-shrink-0" viewBox="0 0 16 16">
+                    <path
+                      d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z" />
+                  </svg>
+                  <p class="mb-0">یک پیام جدید از طرف رضا دارید</p>
+                </a>
+                <a class="d-flex align-items-center gap-2 text-dark fs-12 font-bold py-2 border-bottom">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-megaphone text-danger flex-shrink-0" viewBox="0 0 16 16">
+                    <path
+                      d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z" />
+                  </svg>
+                  <p class="mb-0">یک پیام جدید از طرف رضا دارید</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative d-block dropdownHover">
+            <span
+              class="bg-danger cursor text-white font-bold position-absolute font-bold start-0 rounded-circle d-flex align-items-center justify-content-center m-3 fs-14 w-16 h-16">2</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+              class="bi bi-gift-fill cursor text-warning" viewBox="0 0 16 16">
+              <path
+                d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9z" />
+            </svg>
+            <div class="position-absolute top-26 dropdownContent z-10">
+              <div class="bg-white w-223 rounded-3 p-2 mt-3 px-4">
+                <a class="d-flex align-items-center gap-2 text-dark fs-12 font-bold py-2 border-bottom">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-megaphone text-danger flex-shrink-0" viewBox="0 0 16 16">
+                    <path
+                      d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z" />
+                  </svg>
+                  <p class="mb-0">تبریک... یک جایزه جدید از طرف رضا دارید</p>
+                </a>
+                <a class="d-flex align-items-center gap-2 text-dark fs-12 font-bold py-2 border-bottom">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-megaphone text-danger flex-shrink-0" viewBox="0 0 16 16">
+                    <path
+                      d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z" />
+                  </svg>
+                  <p class="mb-0">تبریک... یک جایزه جدید از طرف رضا دارید</p>
+                </a>
+                <a class="d-flex align-items-center gap-2 text-dark fs-12 font-bold py-2 border-bottom">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-megaphone text-danger flex-shrink-0" viewBox="0 0 16 16">
+                    <path
+                      d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z" />
+                  </svg>
+                  <p class="mb-0">تبریک... یک جایزه جدید از طرف رضا دارید</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between gx-lg-5 gy-5 mt-4 mt-lg-0">
+          <div class="text-white col-lg-4 col-6 fs-sm-13 order-1 order-lg-0">
+            <div class="d-flex flex-wrap align-items-center gap-4 fw-bold mb-3">
+              <div class="d-flex align-items-center gap-2 text-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-person-circle text-success" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                </svg>
+                <p class="mb-0">نام:</p>
+              </div>
+              <p class="mb-0">راحیل موسوی</p>
+            </div>
+            <div class="d-flex flex-wrap align-items-center gap-4 fw-bold mb-3">
+              <div class="d-flex align-items-center gap-2 text-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-person-vcard text-success" viewBox="0 0 16 16">
+                  <path
+                    d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5" />
+                  <path
+                    d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z" />
+                </svg>
+                <p class="mb-0">شغل:</p>
+              </div>
+              <p class="mb-0">برنامه نویس</p>
+            </div>
+            <div class="d-flex flex-wrap align-items-center gap-4 fw-bold mb-3">
+              <div class="d-flex align-items-center gap-2 text-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-phone-vibrate-fill text-success" viewBox="0 0 16 16">
+                  <path
+                    d="M4 4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm5 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0M1.807 4.734a.5.5 0 1 0-.884-.468A8 8 0 0 0 0 8c0 1.347.334 2.618.923 3.734a.5.5 0 1 0 .884-.468A7 7 0 0 1 1 8c0-1.18.292-2.292.807-3.266m13.27-.468a.5.5 0 0 0-.884.468C14.708 5.708 15 6.819 15 8c0 1.18-.292 2.292-.807 3.266a.5.5 0 0 0 .884.468A8 8 0 0 0 16 8a8 8 0 0 0-.923-3.734M3.34 6.182a.5.5 0 1 0-.93-.364A6 6 0 0 0 2 8c0 .769.145 1.505.41 2.182a.5.5 0 1 0 .93-.364A5 5 0 0 1 3 8c0-.642.12-1.255.34-1.818m10.25-.364a.5.5 0 0 0-.93.364c.22.563.34 1.176.34 1.818s-.12 1.255-.34 1.818a.5.5 0 0 0 .93.364C13.856 9.505 14 8.769 14 8s-.145-1.505-.41-2.182" />
+                </svg>
+                <p class="mb-0">تلفن همراه:</p>
+              </div>
+              <p class="mb-0">09149492490</p>
+            </div>
+            <div class="d-flex flex-wrap align-items-center gap-4 fw-bold">
+              <div class="d-flex align-items-center gap-2 text-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-building text-success" viewBox="0 0 16 16">
+                  <path
+                    d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+                  <path
+                    d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
+                </svg>
+                <p class="mb-0">شرکت:</p>
+              </div>
+              <p class="mb-0">عصر اندیشه</p>
+            </div>
+          </div>
+          <!-- progress bar -->
+          <div class="d-flex col-lg-4 order-0 order-lg-1 mb-5 mb-lg-0">
+            <div class="position-relative mx-auto w-223">
+              <div
+                class="w-44 h-44 font-bold fs-14 position-absolute rounded-circle border border-3 text-warning right-14 top-40 border-warning d-flex align-items-center justify-content-center">
+                lvl 15</div>
+              <div class="mx-auto">
+                <div class="mb-4">
+                  <div>
+                    <!-- Progress bar 1 -->
+                    <div class="progress mx-auto position-relative" data-value='80'>
+                      <img src="assets/img/woman-user-circle-black-icon.png"
+                        class="position-absolute rounded-circle w-100 h-100">
+                      <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+                      </span>
+                      <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+                      </span>
+                      <div
+                        class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                      </div>
+                    </div>
+                    <!-- END -->
+                  </div>
+                </div>
+                <div dir="ltr" class="h-16 w-75 mx-auto position-relative top-60 bg-white rounded-3 overflow-hidden">
+                  <p class="mb-0 font-bold position-absolute end-0 me-2 fs-12">1000/1500 xp</p>
+                  <div class="bg-success progress-bar-striped h-100 w-50"></div>
+                </div>
+              </div>
+              <img src="assets/img/woman-user-circle-black-icon.png"
+                class="d-block rounded-circle w-44 h-44 top-40 left-14 position-absolute">
+            </div>
+          </div>
+          <!--  -->
+          <div class="text-white col-lg-4 col-6 fs-sm-13 order-2">
+            <div class="d-flex flex-wrap align-items-center gap-4 fw-bold mb-3">
+              <div class="d-flex align-items-center gap-2 text-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-cash-coin text-success" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                  <path
+                    d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                  <path
+                    d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                  <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+                </svg>
+                <p class="mb-0">موجودی:</p>
+              </div>
+              <p class="mb-0">4 میلیون تومان</p>
+            </div>
+            <div class="d-flex flex-wrap align-items-center gap-4 fw-bold mb-3">
+              <div class="d-flex align-items-center gap-2 text-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-person-rolodex text-success" viewBox="0 0 16 16">
+                  <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                  <path
+                    d="M1 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h.5a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h.5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6.707L6 1.293A1 1 0 0 0 5.293 1zm0 1h4.293L6 2.707A1 1 0 0 0 6.707 3H15v10h-.085a1.5 1.5 0 0 0-2.4-.63C11.885 11.223 10.554 10 8 10c-2.555 0-3.886 1.224-4.514 2.37a1.5 1.5 0 0 0-2.4.63H1z" />
+                </svg>
+                <p class="mb-0">مدیرعامل شرکت:</p>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <p class="mb-0">سمیه محمدی</p>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap align-items-center gap-4 fw-bold mb-3">
+              <div class="d-flex align-items-center gap-2 text-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-cash-stack text-success" viewBox="0 0 16 16">
+                  <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                  <path
+                    d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z" />
+                </svg>
+                <p class="mb-0">موجودی کارمندان:</p>
+              </div>
+              <p class="mb-0">30 میلیون تومان</p>
+            </div>
+            <div class="d-flex flex-wrap align-items-center gap-4 fw-bold">
+              <div class="d-flex align-items-center gap-2 text-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-people-fill text-success" viewBox="0 0 16 16">
+                  <path
+                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                </svg>
+                <p class="mb-0">تعداد کارمندان:</p>
+              </div>
+              <p class="mb-0">34 نفر</p>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-start justify-content-between g-4 mt-5">
+          <div class="col-xl-4 col-lg-6">
+            <div class="rounded-3 bg-primary p-3">
+              <div class="d-flex align-items-center gap-2 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                  class="bi bi-lightbulb text-warning" viewBox="0 0 16 16">
+                  <path
+                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1" />
+                </svg>
+                <p class="text-white font-bold h5 mb-0">وظایف:</p>
+              </div>
+              <div>
+                <div
+                  class="fw-bold py-2 px-3 rounded-3 gap-2 fs-14 bg-info mb-4 d-flex align-items-center justify-content-between">
+                  <p class="mb-0 fs-12">1- قرار دادن پیج در اینستاگرام</p>
+                  <span class="btn btn-success fs-12 flex-shrink-0">انجام دادم</span>
+                </div>
+                <div
+                  class="fw-bold py-2 px-3 rounded-3 gap-2 fs-14 bg-info mb-4 d-flex align-items-center justify-content-between">
+                  <p class="mb-0 fs-12">2- ادمین اینستا</p>
+                  <span class="btn btn-success fs-12 flex-shrink-0">انجام دادم</span>
+                </div>
+                <div
+                  class="fw-bold py-2 px-3 rounded-3 gap-2 fs-14 bg-info d-flex align-items-center justify-content-between">
+                  <p class="mb-0 fs-12">3- سوشال مدیا</p>
+                  <span class="btn btn-success fs-12 flex-shrink-0">انجام دادم</span>
+                </div>
+              </div>
+            </div>
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal2"
+              class="text-white btn fw-bold py-2 px-4 btn-info rounded-3 mt-3 text-center d-lg-block d-none">گزارش
+              خطا</a>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+            <div class="rounded-3 bg-primary p-3">
+              <div class="d-flex align-items-center gap-2 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                  class="bi bi-lightning-charge-fill text-warning" viewBox="0 0 16 16">
+                  <path
+                    d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
+                </svg>
+                <p class="text-white font-bold h5 mb-0">هدف ها:</p>
+              </div>
+              <div>
+                <p class="text-white font-bold h5 mb-4 fs-sm-13">رسیدن به 50k</p>
+                <div dir="ltr" class="h-16 position-relative bg-white rounded-3 overflow-hidden mb-3">
+                  <p class="mb-0 fs-12 fw-bold position-absolute end-0 me-2">50%</p>
+                  <div class="bg-danger progress-bar-striped h-100 w-50"></div>
+                </div>
+                <div dir="ltr" class="h-16 position-relative bg-white rounded-3 overflow-hidden">
+                  <p class="mb-0 fs-12 fw-bold position-absolute end-0 me-2">75%</p>
+                  <div class="bg-warning progress-bar-striped h-100 w-75"></div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal2"
+                class="text-white btn fw-bold flex-grow-1 py-2 px-4 btn-info rounded-3 mt-3 text-center d-block d-lg-none">گزارش
+                خطا</a>
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                class="text-white btn fw-bold flex-grow-1 py-2 px-4 btn-info rounded-3 mt-3 text-center d-block">گزارش
+                کار</a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap align-items-center gap-4 fw-bold my-5">
+          <a class="mb-0 text-white">خانه</a>
+          <a class="mb-0 text-white">تنظیمات</a>
+          <a class="mb-0 text-white">فروشگاه</a>
+        </div>
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 px-3">
+          <div class="dropdown">
+            <div
+              class="w-24 h-24 position-absolute fs-14 mb-5 -m-12 rounded-circle border border-3 border-warning d-flex align-items-center justify-content-center font-bold text-warning">
+              15</div>
+            <div data-bs-toggle="dropdown" aria-expanded="false">
+              <div
+                class="bg-white d-flex align-items-center justify-content-center w-70 h-70 border border-2 border-dark rounded-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                  class="bi bi-person-fill cursor" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+              </div>
+              <p class="text-center text-white font-bold mt-3 fs-sm-13">محمد رضایی</p>
+            </div>
+            <ul class="dropdown-menu text-end">
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                <p class="dropdown-item mb-0 cursor" href="#">واریز پول</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                <p class="dropdown-item mb-0 cursor" href="#">ارسال XP</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                <p class="dropdown-item mb-0 cursor" href="#">افزودن هدف</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                <p class="dropdown-item mb-0 cursor" href="#">افزودن وظایف</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                <p class="dropdown-item mb-0 cursor text-danger font-bold" href="#">اخراج</p>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <div
+              class="w-24 h-24 position-absolute fs-14 mb-5 -m-12 rounded-circle border border-3 border-warning d-flex align-items-center justify-content-center font-bold text-warning">
+              15</div>
+            <div data-bs-toggle="dropdown" aria-expanded="false">
+              <div
+                class="bg-white d-flex align-items-center justify-content-center w-70 h-70 border border-2 border-dark rounded-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                  class="bi bi-person-fill cursor" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+              </div>
+              <p class="text-center text-white font-bold mt-3 fs-sm-13">محمد رضایی</p>
+            </div>
+            <ul class="dropdown-menu text-end">
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                <p class="dropdown-item mb-0 cursor" href="#">واریز پول</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                <p class="dropdown-item mb-0 cursor" href="#">ارسال XP</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                <p class="dropdown-item mb-0 cursor" href="#">افزودن هدف</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                <p class="dropdown-item mb-0 cursor" href="#">افزودن وظایف</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                <p class="dropdown-item mb-0 cursor text-danger font-bold" href="#">اخراج</p>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <div
+              class="w-24 h-24 position-absolute fs-14 mb-5 -m-12 rounded-circle border border-3 border-warning d-flex align-items-center justify-content-center font-bold text-warning">
+              15</div>
+            <div data-bs-toggle="dropdown" aria-expanded="false">
+              <div
+                class="bg-white d-flex align-items-center justify-content-center w-70 h-70 border border-2 border-dark rounded-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                  class="bi bi-person-fill cursor" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+              </div>
+              <p class="text-center text-white font-bold mt-3 fs-sm-13">محمد رضایی</p>
+            </div>
+            <ul class="dropdown-menu text-end">
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                <p class="dropdown-item mb-0 cursor" href="#">واریز پول</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                <p class="dropdown-item mb-0 cursor" href="#">ارسال XP</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                <p class="dropdown-item mb-0 cursor" href="#">افزودن هدف</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                <p class="dropdown-item mb-0 cursor" href="#">افزودن وظایف</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                <p class="dropdown-item mb-0 cursor text-danger font-bold" href="#">اخراج</p>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <div
+              class="w-24 h-24 position-absolute fs-14 mb-5 -m-12 rounded-circle border border-3 border-warning d-flex align-items-center justify-content-center font-bold text-warning">
+              15</div>
+            <div data-bs-toggle="dropdown" aria-expanded="false">
+              <div
+                class="bg-white d-flex align-items-center justify-content-center w-70 h-70 border border-2 border-dark rounded-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                  class="bi bi-person-fill cursor" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+              </div>
+              <p class="text-center text-white font-bold mt-3 fs-sm-13">محمد رضایی</p>
+            </div>
+            <ul class="dropdown-menu text-end">
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                <p class="dropdown-item mb-0 cursor" href="#">واریز پول</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                <p class="dropdown-item mb-0 cursor" href="#">ارسال XP</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                <p class="dropdown-item mb-0 cursor" href="#">افزودن هدف</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                <p class="dropdown-item mb-0 cursor" href="#">افزودن وظایف</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                <p class="dropdown-item mb-0 cursor text-danger font-bold" href="#">اخراج</p>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <div
+              class="w-24 h-24 position-absolute fs-14 mb-5 -m-12 rounded-circle border border-3 border-warning d-flex align-items-center justify-content-center font-bold text-warning">
+              15</div>
+            <div data-bs-toggle="dropdown" aria-expanded="false">
+              <div
+                class="bg-white d-flex align-items-center justify-content-center w-70 h-70 border border-2 border-dark rounded-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                  class="bi bi-person-fill cursor" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+              </div>
+              <p class="text-center text-white font-bold mt-3 fs-sm-13">محمد رضایی</p>
+            </div>
+            <ul class="dropdown-menu text-end">
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                <p class="dropdown-item mb-0 cursor" href="#">واریز پول</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                <p class="dropdown-item mb-0 cursor" href="#">ارسال XP</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                <p class="dropdown-item mb-0 cursor" href="#">افزودن هدف</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                <p class="dropdown-item mb-0 cursor" href="#">افزودن وظایف</p>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                <p class="dropdown-item mb-0 cursor text-danger font-bold" href="#">اخراج</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
