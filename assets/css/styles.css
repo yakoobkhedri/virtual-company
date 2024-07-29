@@ -89,15 +89,25 @@ a {
 .h-70{
     height: 70px;
 }
+.h-76vh{
+    height: 76vh;
+}
 .h-100vh{
     height: 100vh;
 }
 .h-150{
     height: 150px;
 }
+.h-245{
+    height: 245px;
+}
 /* opacity */
 .opacity-0{
     opacity: 0;
+}
+/* outline-none */
+.outline-none{
+    outline: none;
 }
 /* margin */
 .-m-12{
@@ -124,6 +134,10 @@ margin: -12px;
 }
 .top-74{
     top: 74px;
+}
+/* bottom */
+.bottom-80{
+    bottom: 80px;
 }
 /* left */
 .left-14{

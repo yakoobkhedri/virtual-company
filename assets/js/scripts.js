@@ -1,3 +1,26 @@
+// swiper
+var messagesswiper = new Swiper(".messagesswiper", {
+autoplay: true,
+slidesPerView: 3,
+spaceBetween: 30,
+breakpoints: {
+  576: {
+    slidesPerView: 3,
+  },
+  768: {
+    slidesPerView: 4,
+  },
+  992: {
+    slidesPerView: 4,
+  },
+  1200: {
+    slidesPerView: 4,
+  }
+},
+});
+
+// 
+
 $(function() {
 
     $(".progress").each(function() {
@@ -24,15 +47,3 @@ $(function() {
     }
   
   });
-
-  // add skill
-
-  let skillText = document.getElementById('skillText');
-  let addSkill = document.getElementById('addSkill');
-  let skills = document.getElementById('skills');
-
-  addSkill.addEventListener('click' , function () {
-    const p = document.createElement("p");
-    p.innerText = skillText.value;
-    skills.appendChild(p);
-  })
