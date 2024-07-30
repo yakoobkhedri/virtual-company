@@ -1,11 +1,11 @@
 // swiper
 var messagesswiper = new Swiper(".messagesswiper", {
 autoplay: true,
-slidesPerView: 3,
-spaceBetween: 30,
+slidesPerView: 2,
+spaceBetween: 10,
 breakpoints: {
   576: {
-    slidesPerView: 3,
+    slidesPerView: 2.4,
   },
   768: {
     slidesPerView: 4,
