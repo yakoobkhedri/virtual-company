@@ -315,6 +315,9 @@ margin: -12px;
       }
   }
   @media screen and (max-width:576px) {
+    .fs-sm-14{
+      font-size: 14px;
+    }
       .fs-sm-13{
         font-size: 13px;
       }
